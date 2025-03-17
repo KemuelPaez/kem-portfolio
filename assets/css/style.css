@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
 
 :root {
-    --color-body: #b6cbce;
-    --color-heading: #eef3db;
-    --color-base: #033f47;
-    --color-base2: #022a30;
-    --color-brand: #e0f780;
-    --color-brand2: #deff58;
-    --sidbar-width: 240px;
+    --color-body: #BFBFBF; /* Accent Color */
+    --color-heading: #FF9800; /* Highlight Color */
+    --color-base: #121212; /* Background Color */
+    --color-base2: #1E1E1E; /* Primary Color */
+    --color-brand: #FF9800; /* Highlight Color */
+    --color-brand2: #ffc774; /* Secondary Color */
+    --sidbar-width: 250px;
     --font-base: "Bai Jamjuree";
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 body {
@@ -93,11 +97,45 @@ img {
     color: var(--color-brand);
 }
 
+.navbar-toggler {
+    margin-left: auto;
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        min-height: auto;
+        width: 100%;
+        background: var(--color-base);
+    }
+
+    .navbar-collapse {
+        background: var(--color-base);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 10px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
+
 @media (min-width: 992px) {
     .navbar {
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)), url(../images/sidebar-img.jpg);
+        background: linear-gradient(rgba(27, 31, 35, 0.8), rgba(27, 31, 35, 0.8)), url(../images/sidebar-img.jpg);
         background-size: cover;
         background-position: center;
     }
