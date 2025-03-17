@@ -19,7 +19,7 @@
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 		<div class="container flex-lg-column">
 			<a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
-				<span class="h3 fw-bold d-block d-lg-none">Jon Carter</span>
+				<span class="h3 fw-bold d-block d-lg-none">Kem Paez</span>
 				<img src="./assets/images/gradpic.jpeg" class="d-none d-lg-block rounded-circle" alt="">
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -59,17 +59,19 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-lg-8">
-						<h1 class="display-4 fw-bold text-white" data-aos="fade-up">
+						<h1 class="display-4 fw-bold text-white" data-aos="fade-left">
 							Hi! I'm <span class="text-brand"> KEMUEL KYLE PAEZ </span>
 						</h1>
-						<p class="lead mt-2 mb-4 text-white" data-aos="fade-up" data-aos-delay="300">
+						<p class="lead mt-2 mb-4 text-white" data-aos="fade-left" data-aos-delay="300">
 							Developer, UI/UX Design & Graphics Design
 						</p>
-						<div class="d-flex align-items-center" data-aos="fade-up" data-aos-delay="600">
+						<div class="d-flex align-items-center" data-aos="fade-left" data-aos-delay="600">
 							<a href="#projects" class="btn btn-brand me-3">Explore</a>
-							<a href="https://drive.google.com/file/d/1FM5QaqUq_nvaSU-aDBZzgTr2JXxeRwBs/view?usp=sharing" 
-								target="_blank" rel="noopener noreferrer" 
-								class="btn btn-brand">See Resume</a>
+							<a href="https://drive.google.com/file/d/1FM5QaqUq_nvaSU-aDBZzgTr2JXxeRwBs/view?usp=sharing" target="_blank" rel="noopener noreferrer" 
+								class="btn btn-brand d-flex align-items-center">
+								See Resume
+								<i class="las la-file-pdf" style="font-size: 1.5rem;"></i>
+							</a>			
 						</div>
 					</div>
 				</div>
@@ -207,7 +209,7 @@
 				</div>
 
 				<div class="row gy-4">
-					<div class="col-md-6" data-aos="fade-up">
+					<div class="col-md-6" data-aos="fade-right">
 						<div class="card-custom rounded-4 bg-base shadow-effect">
 							<div class="card-custom-image rounded-4" style="position: relative;">
 								<img 
@@ -225,7 +227,7 @@
 						</div>
 					</div>
 				
-					<div class="col-md-6" data-aos="fade-up">
+					<div class="col-md-6" data-aos="fade-left">
 						<div class="card-custom rounded-4 bg-base shadow-effect">
 							<div class="card-custom-image rounded-4" style="position: relative;">
 								<img 
@@ -264,11 +266,14 @@
 				<div class="row gy-5">
 					<div class="col-lg-6">
 
-						<h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3>
+						<div class="d-flex align-items-center gap-2 mb-4" data-aos="fade-up" data-aos-delay="300">
+							<h3 class="mb-0">Education</h3>
+							<i class="las la-graduation-cap" style="font-size: 2rem;"></i>
+						</div>
 						<div class="row gy-4">
 
 							<div class="col-12" data-aos="fade-up" data-aos-delay="600">
-								<div class="bg-base p-4 rounded-4 shadow-effect">
+								<div class="bg-base p-4 rounded-4 shadow-effect ">
 									<h4>Bachelor of Science in Computer Science</h4>
 									<p class="text-brand mb-2">University of St. La Salle (2022 - 2023)</p>
 									<p class="mb-0">Graduated at University of St. La Salle with a bachelors degree in computer science.</p>
@@ -284,7 +289,7 @@
 									<div>
 										<h4>Google AI Essentials</h4>
 										<p class="text-brand mb-2">Coursera (March 01, 2025)</p>
-										<a class="mb-0" href="https://www.credly.com/badges/27403ab2-76b9-4b10-9d6d-7f978694ac2c/public_url">
+										<a class="mb-0" target="_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/27403ab2-76b9-4b10-9d6d-7f978694ac2c/public_url">
 											<u>Preview certificate here</u>
 										</a>
 									</div>
@@ -292,18 +297,21 @@
 								</div>
 							</div>
 						</div>
+						<!-- add future certificates here -->
 
 					</div>
 
 					<div class="col-lg-6">
 
-						<h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experience</h3>
+						<div class="d-flex align-items-center gap-2 mb-4" data-aos="fade-up" data-aos-delay="300">
+							<h3 class="mb-0">Experience</h3>
+							<i class="las la-briefcase" style="font-size: 2rem;"></i>
+						</div>
 						<div class="row gy-4">
 
 							<div class="col-12" data-aos="fade-up" data-aos-delay="600">
 								<div class="bg-base p-4 rounded-4 shadow-effect">
 									<h4>Student Intern</h4>
-									<!-- add icons after the company -->
 									<p class="text-brand mb-2">Dev Trainee (2022 - 2023)</p>
 									<p class="text-brand mb-2">iReply Back Office Service Inc.</p>
 									<p class="mb-0">Assisted the development of the HRIS website of iReply Back Office Service Inc. on both frontendand backend.</p>
@@ -370,8 +378,13 @@
 		<footer class="py-5 px-lg-5">
 			<div class="container">
 				<div class="row gy-4 justify-content-between">
-					<div class="col-auto">
-						<p class="mb-0"><a href="#" class="fw-bold">Kemuel Kyle Paez</a></p>
+					<div class="col-auto d-flex align-items-center">
+						<a href="#">
+							<img 
+							src="./assets/images/kem-logo.png" 
+							style="width: 50px; height: 50px; object-fit: cover;">
+						</a>
+						<p style="margin-left: 10px;">Made by: Kem Paez</p>	
 					</div>
 					<div class="col-auto">
 						<div class="social-icons">
