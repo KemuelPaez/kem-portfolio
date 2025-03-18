@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kemuel Paez Portfolio</title>
+	<link rel="icon" type="image/png" href="../assets/images/site-icon.png">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/aos.css">
+	<link rel="stylesheet" href="../assets/css/line-awesome.min.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" data-aos="fade-right" data-aos-delay="300">
+		<div class="container flex-lg-column">
+			<a class="navbar-brand mx-lg-auto mb-lg-4" href="../index.html#home">
+				<img src="../assets/images/kem-logo.png" class="d-block d-lg-none" alt="Logo" style="width: 40px; height: 40px; object-fit: cover;">
+				<img src="../assets/images/gradpic.jpeg" class="d-none d-lg-block rounded-circle" alt="">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html#skills">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html#projects">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html#contact">Contact</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- //NAVBAR -->
+
+	<!-- CONTENT WRAPPER -->
+	<div id="content-wrapper">
+		
+		<!-- PROJECT -->
+		<section id="project-1" class="full-height px-lg-5">
+			<div class="container">
+				<!-- Project Title -->
+				<div class="row">
+					<div class="col-12 text-center">
+						<h1 class="text-brand my-4">Travel Go App</h1>
+					</div>
+				</div>
+
+				<!-- Centered Iframe -->
+				<iframe 
+					class="centered-iframe"
+					style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="600" 
+					src="https://embed.figma.com/proto/lJxVYYPtIm6ZQdzX7KEIbx/Travel-Go?node-id=20-26&p=f&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A94&embed-host=share" 
+					allowfullscreen>
+				</iframe>
+
+				<!-- Project Description -->
+				<div class="row mt-4">
+					<div class="col-12">
+						<p class="text-white">
+							Travel Go is a travel app designed to simplify trip planning by helping users book hotels, discover resorts, and explore tourist destinations—all in one place. Currently in development, the app's wireframe and prototype are being crafted in Figma to ensure a seamless and intuitive user experience. Stay tuned for a smarter way to plan your next adventure! 🚀🌍
+						</p>
+						<div class="text-center">
+							<a href="https://www.figma.com/proto/lJxVYYPtIm6ZQdzX7KEIbx/Travel-Go?node-id=1-94&p=f&t=MDnzsD64VYFwnjk6-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A94"
+								class="link-custom"
+								target="_blank" rel="noopener noreferrer">DEMO PROTOTYPE
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //PROJECTS -->
+
+		<!-- FOOTER -->
+		<footer class="py-5 px-lg-5">
+			<div class="container">
+				<div class="row gy-4 justify-content-between">
+					<div class="col-auto d-flex align-items-center">
+						<a href="../index.html#home">
+							<img 
+							src="../assets/images/kem-logo.png" 
+							style="width: 50px; height: 50px; object-fit: cover;">
+						</a>
+						<p style="margin-left: 10px;">Made by: Kem Paez</p>	
+					</div>
+					<div class="col-auto">
+						<div class="social-icons">
+							<a href="https://www.linkedin.com/in/kemuel-kyle-paez-a2a460275/" target="_blank" rel="noopener noreferrer"><i class="lab la-linkedin"></i></a>
+							<a href="https://www.facebook.com/Kem.Jong.Un.Boy/" target="_blank" rel="noopener noreferrer"><i class="lab la-facebook"></i></a>
+							<a href="https://github.com/KemuelPaez" target="_blank" rel="noopener noreferrer"><i class="lab la-github"></i></a>
+							<a href="https://www.instagram.com/kempazee/" target="_blank" rel="noopener noreferrer"><i class="lab la-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- //FOOTER -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	<script src="../assets/js/bootstrap.bundle.min.js"></script>
+	<script src="../assets/js/aos.js"></script>
+	<script src="../assets/js/main.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+			var navbarCollapse = document.querySelector('.navbar-collapse');
+	
+			navLinks.forEach(function (link) {
+				link.addEventListener('click', function () {
+					// Remove active class from all links
+					navLinks.forEach(function (navLink) {
+						navLink.classList.remove('active');
+					});
+	
+					// Add active class to the clicked link
+					link.classList.add('active');
+	
+					// Collapse the navbar if the screen width is less than or equal to 991.98px
+					if (window.innerWidth <= 991.98) {
+						var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+							toggle: true
+						});
+						bsCollapse.hide();
+					}
+				});
+			});
+	
+			// Update active link based on scroll position
+			window.addEventListener('scroll', function () {
+				var currentSection = '';
+				var sections = document.querySelectorAll('section');
+				var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+	
+				sections.forEach(function (section) {
+					if (scrollPosition >= section.offsetTop - 100) {
+						currentSection = section.getAttribute('id');
+					}
+				});
+	
+				navLinks.forEach(function (navLink) {
+					navLink.classList.remove('active');
+					if (navLink.getAttribute('href').substring(1) === currentSection) {
+						navLink.classList.add('active');
+					}
+				});
+			});
+		});
+	</script>
+</body>
+
+</html>
