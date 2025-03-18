@@ -57,14 +57,12 @@
 		<!-- PROJECT -->
 		<section id="project-1" class="full-height px-lg-5">
 			<div class="container">
-				<!-- Project Title -->
 				<div class="row">
 					<div class="col-12 text-center">
 						<h1 class="text-brand my-4">Travel Go App</h1>
 					</div>
 				</div>
 
-				<!-- Centered Iframe -->
 				<iframe 
 					class="centered-iframe"
 					style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="600" 
@@ -72,7 +70,6 @@
 					allowfullscreen>
 				</iframe>
 
-				<!-- Project Description -->
 				<div class="row mt-4">
 					<div class="col-12">
 						<p class="text-white">
@@ -128,15 +125,12 @@
 	
 			navLinks.forEach(function (link) {
 				link.addEventListener('click', function () {
-					// Remove active class from all links
 					navLinks.forEach(function (navLink) {
 						navLink.classList.remove('active');
 					});
 	
-					// Add active class to the clicked link
 					link.classList.add('active');
 	
-					// Collapse the navbar if the screen width is less than or equal to 991.98px
 					if (window.innerWidth <= 991.98) {
 						var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
 							toggle: true
@@ -146,7 +140,6 @@
 				});
 			});
 	
-			// Update active link based on scroll position
 			window.addEventListener('scroll', function () {
 				var currentSection = '';
 				var sections = document.querySelectorAll('section');
