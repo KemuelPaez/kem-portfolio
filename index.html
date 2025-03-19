@@ -351,21 +351,23 @@
 					</div>
 
 					<div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
-						<form action="#" class="row g-lg-3 gy-3">
+						<form action="https://getform.io/f/avrwplxa" method="POST" class="row g-lg-3 gy-3">
 							<div class="form-group col-md-6">
-								<input type="text" class="form-control" placeholder="Enter your name">
+								<input type="text" name="name" class="form-control" placeholder="Enter your name">
 							</div>
 							<div class="form-group col-md-6">
-								<input type="email" class="form-control" placeholder="Enter your email">
+								<input type="email" name="email" class="form-control" placeholder="Enter your email">
 							</div>
 							<div class="form-group col-12">
-								<input type="text" class="form-control" placeholder="Enter subject">
+								<input type="text" name="name" class="form-control" placeholder="Enter subject">
 							</div>
+							<!-- add hidden Honeypot input to prevent spams -->
+							<input type="hidden" name="_gotcha" style="display:none !important">
 							<div class="form-group col-12">
-								<textarea name="" rows="4" class="form-control" placeholder="Enter your message"></textarea>
+								<textarea name="name" rows="4" class="form-control" placeholder="Enter your message"></textarea>
 							</div>
 							<div class="form-group col-12 d-grid">
-								<button type="button" class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#underConstructionModal">
+								<button type="submit" class="btn btn-brand">
 									Contact me
 								</button>
 							</div>
@@ -405,24 +407,6 @@
 
 	</div>
 	<!-- //CONTENT WRAPPER -->
-
-	<!-- Modal -->
-	<div class="modal fade" id="underConstructionModal" tabindex="-1" aria-labelledby="underConstructionModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="underConstructionModalLabel">Notice</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					This feature is currently under construction. Please check back later!
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<script src="./assets/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/aos.js"></script>
